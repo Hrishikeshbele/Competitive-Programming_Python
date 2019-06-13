@@ -32,3 +32,27 @@ class Solution:
             s.append((x+")", l, r+1))
         #since we have to return sorted string
         return res[::-1]
+
+#2nd elegent solution
+
+class Solution:
+    # @param A : integer
+    # @return a list of strings
+    def generateParenthesis(self, A):
+        result = []
+	#using helper function to find all pairs
+        def helper(left, right, soFar):
+	#left-no of opening parth,right-closing parth
+	#unvalid conditions
+            if left < 0 or right < 0 or left > right:
+                return
+	#no opening and closing bracket left
+            if left == right == 0:
+                result.append(soFar)
+                return
+	#adding opening parth and decreasing left count by 1 and vice-versa
+            helper(left-1, right, soFar + '(')
+            helper(left, right-1, soFar + ')')
+        
+        helper(A, A, '')
+        return result
