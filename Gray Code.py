@@ -27,4 +27,16 @@ class Solution:
         res = temp + temp1
         return res
         
+## solution:2
+
+def grayCode(A):
+    res = [0]
+    for i in range(A):
+        #shifting bit by i to left
+        t = 1<<i
+        #adding t to each elm of reversed(res)
+        temp = [j+t for j in reversed(res)]
+        #adding temp to res
+        res = res + temp
+    return res    
 
