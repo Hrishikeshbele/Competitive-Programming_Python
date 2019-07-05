@@ -14,7 +14,7 @@ class Solution:
     def maxProfit(self, prices):
         profit, min_buy = 0, float('inf')
         #Approach: each day, we evaluate the benefice
-        # we get by selling that very day.
+        #we get by selling that very day.then we keep max of curr day and overall.
         for price in prices:
             min_buy = min(min_buy, price) #is price less than min_buy
             profit = max(profit, price - min_buy)
