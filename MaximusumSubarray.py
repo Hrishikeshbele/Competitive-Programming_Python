@@ -15,17 +15,23 @@ class Solution(object):
         """
         '''
         #solution1
-        if len(nums)==1:
-            return nums[0]
-        ans=-999999
-        for start in range(len(nums)):
-            n=0
-            #iterate for diff sizes of arrays
-            for size in range(1,len(nums)+1):
-                if size+start>len(nums):
-                    break
-                n+=nums[start+size-1]
-                ans=max(ans,n)
+        
+        def maxSubArray(self, a):
+        #Kadane’s Algorithm:You keep accumulating sum till the sum becomes < 0, 
+        # at which point you start over again, discarding the accumulated sum.
+        maxend,ans=0,-99999
+        if len(a)==1:
+            return a[0]
+        for i in range(len(a)):
+            maxend=maxend+a[i]
+            if maxend>ans:
+                ans=maxend
+            if maxend<0:
+                maxend=0
+        
+        return ans
+                
+            
                 
         return ans 
         '''
