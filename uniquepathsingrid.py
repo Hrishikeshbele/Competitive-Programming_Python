@@ -17,7 +17,7 @@ class Solution(object):
         for i in range(1,n):
             for j in range(1,m):
                 count[i][j]=count[i][j-1]+count[i-1][j]
-        return count[n-1][m-1]
+        return count[n-1][m-1] #or x[-1][-1]
                 
 
         
