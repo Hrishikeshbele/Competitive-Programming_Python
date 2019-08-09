@@ -1,2 +1,2 @@
 # python_coding
-this repository contains my solutions to the coding problems on interviewbit website.
+This repository contains my solutions to the coding problems I have solved on different competitive programming websites like InterviewBit, Leetcode, etc.
