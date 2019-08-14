@@ -6,6 +6,7 @@ Input
 Output 
 2 
 '''
+# min is always achieved by two neighbours in sorted array
 class Solution:
     # @param A : list of integers
     # @return: an integer
