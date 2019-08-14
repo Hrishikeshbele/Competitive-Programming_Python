@@ -4,16 +4,22 @@ Example :
 Input : "XIV"
 Return : 14
 '''
-class Solution:
-    # @param A : string
-    # @return an integer
-    def romanToInt(s):
+#idea:Whenever a letter with lesser value precedes a letter of higher value, it means its value has to be added as negative of that letter’s value.
+class Solution(object):
+    def romanToInt(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
         d= {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
         ans = 0
         for i in range(len(s)):
-            if i > 0 and d[s[i]] > d[s[i - 1]]:
-                ans += d[s[i]]-2*d[s[i - 1]]
+            #we  check if curr char value is less than next char
+            #if yes we just substract that from cumm sum and add other values
+            if i+1 < len(s) and d[s[i+1]] > d[s[i]]:
+                ans -= d[s[i]]
             else:
-                ans += d[s[i]]
+                ans =ans + d[s[i]]
         return ans
+        
             
