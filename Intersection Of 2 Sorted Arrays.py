@@ -14,6 +14,7 @@ class Solution:
     def intersect(self, A, B):
         ans=[]
         i,j=0,0
+        #if elm in 2 arr are same we are appending it and increamenting i,j by 1,when a[i]>b[j] we increament j since arr are sorted 
         while(i<len(A) and j<len(B)):
             if B[j]==A[i]:
                 ans.append(A[i])
