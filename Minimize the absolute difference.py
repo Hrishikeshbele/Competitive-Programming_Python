@@ -13,7 +13,7 @@ B : [ 6, 9, 15 ]
 C : [ 2, 3, 6, 6 ]
 Output:1
 '''
-
+#idea here is to increament the interator of arr in which min curr min elm is present this will lead us to find min diff 
 class Solution:
     # @param A : list of integers
     # @param B : list of integers
@@ -25,8 +25,10 @@ class Solution:
         while (a < len(A)) & (b < len(B)) & (c < len(C)):
             #finding the max and min num amongs three
             maxx, minn = max(A[a], B[b], C[c]), min(A[a], B[b], C[c])
+            #if curr diff is smaller than min update minn
             if abs(maxx - minn) < mini:
                 mini = abs(maxx - minn)
+            #checking for min elm is present in which arr of 3,increment the iterator for that arr only
             if minn == A[a]:
                 a += 1
             elif minn == B[b]:
