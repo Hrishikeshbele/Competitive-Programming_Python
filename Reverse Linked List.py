@@ -18,9 +18,13 @@ class Solution:
         curr = A
         prev = None
         while (curr):
+            #we are storing pointer to next node of curr node to move forward,since we have to set curr.next to prev elm pointer
             next=curr.next
+            #setting next of curr elm to prev elm 
             curr.next=prev
+            #storng curr elm as prev elm to use in next iteration
             prev=curr
+            #moving foreward to next node
             curr=next
         head=prev
      
