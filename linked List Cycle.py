@@ -44,7 +44,16 @@ class Solution:
             slow=slow.next
         return slow
         
-       
+  #second solution
+  #we maintain 2 pointer. increment them every time by diff magnitude and check if they meet at some pt. if yes there is cycle
+  def hasCycle(self, head):
+    slow = fast = head
+    while fast and fast.next:
+        fast = fast.next.next
+        slow = slow.next
+        if slow == fast:
+            return True
+    return False
             
             
             
