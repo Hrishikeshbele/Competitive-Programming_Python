@@ -1,0 +1,29 @@
+'''
+Return S after removing the outermost parentheses of every primitive string in the primitive decomposition of S.
+
+Example 1:
+
+Input: "(()())(())"
+Output: "()()()"
+'''
+class Solution(object):
+    def removeOuterParentheses(self, S):
+        """
+        :type S: str
+        :rtype: str
+        """
+        curr,res='',''
+        count=0
+        #we keep track of no of opened and clsed parthesis as soon as this sum become 0 we remove first and last parth and append 
+        #the rest into result. we also keep track of curr string using curr var
+        for i in S:
+            curr+=i
+            if i=='(':
+                count+=1
+            elif i==")":
+                count-=1
+            if count==0:
+                res+=curr[1:-1]
+                curr='' 
+            
+        return res
