@@ -15,10 +15,10 @@ class Solution:
           #removing all elm greater than curr elm from left of curr elm
 	        while stack and stack[-1]>=A[i]:
 	            stack.pop()
-          #if elm found in stack
+          #if stack is not empty we append it's last elm to result
 	        if stack:
 	            result.append(stack[-1])
-          #if no elm smaller than A[i] then append -1 to result
+          #if no elm smaller than A[i] to left side then append -1 to result
 	        else:
 	            result.append(-1)
 	        stack.append(A[i])
