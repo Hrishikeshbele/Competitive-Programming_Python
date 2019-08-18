@@ -1,7 +1,58 @@
 '''
 Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 '''
+#here idea is instead of pushing elm directly into stack we add second elm with it which will keep track of min elm in stack
+# (x,minelm) :> stack[elm][minelm]
+class MinStack(object):
 
+    def __init__(self):
+        """
+        initialize your data structure here.
+        """
+        self.data=[(None, float('inf'))]
+
+    def push(self, x):
+        """
+        :type x: int
+        :rtype: None
+        """
+        #we keep track of min elm each time we add new elem and store it with new elm
+        self.data.append((x,min(x,self.data[-1][1])))
+        
+
+    def pop(self):
+        """
+        :rtype: None
+        """
+        if self.data:
+            self.data.pop()
+        
+
+    def top(self):
+        """
+        :rtype: int
+        """
+        #return last elm x
+        return self.data[-1][0]
+        
+
+    def getMin(self):
+        """
+        :rtype: int
+        """
+        #min elm will be second elm in last added entry
+        return self.data[-1][1]
+        
+
+
+# Your MinStack object will be instantiated and called as such:
+# obj = MinStack()
+# obj.push(x)
+# obj.pop()
+# param_3 = obj.top()
+# param_4 = obj.getMin()
+
+#second solution using 2 stacks
 
 class MinStack:
     # @param x, an integer
