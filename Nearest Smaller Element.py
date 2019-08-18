@@ -3,6 +3,8 @@ Given an array, find the nearest smaller element G[i] for every element A[i] in 
 Input : A : [4, 5, 2, 10, 8]
 Return : [-1, 4, -1, 2, 2]
 '''
+# We are looking for value just smaller than `A[i]`. So keep popping from `st` till elements in `st.top() >= A[i]` or st becomes empty.
+
 class Solution:
 	# @param A : list of integers
 	# @return a list of integers
@@ -21,5 +23,6 @@ class Solution:
           #if no elm smaller than A[i] to left side then append -1 to result
 	        else:
 	            result.append(-1)
+		#push curr elm into stack to check in next iteration if it is smaller than next elm.
 	        stack.append(A[i])
 	    return result
