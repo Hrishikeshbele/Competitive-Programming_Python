@@ -30,3 +30,36 @@ class Solution:
                 ans.append(int(num))
         return int(ans[-1])
                 
+#solution2
+#everytime when operator comes we are poping last 2 elms and performing optn on them and storing result in stack.lastly return last elm of stack.
+class Solution:
+    # @param A : list of strings
+    # @return an integer
+    def evalRPN(self, A):
+        s=[]
+        op=['+', '-', '*', '/']
+        for i in A:
+            if i not in op:
+                s.append(int(i))
+            elif i=='/':
+                num1 = s.pop()
+                num2 = s.pop()
+                s+=[num2/num1]
+            elif i=='*':
+                num1 = s.pop()
+                num2 = s.pop()
+                s+=[num2*num1]
+            elif i=='+':
+                num1 = s.pop()
+                num2 = s.pop()
+                s+=[num2+num1]
+            elif i=='-':
+                num1 = s.pop()
+                num2 = s.pop()
+                s+=[num2-num1]
+        return int(s[-1])
+        
+        
+                
+            
+        
