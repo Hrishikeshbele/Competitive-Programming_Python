@@ -18,6 +18,8 @@ def sortedSquares(self, A):
         return sorted(sqr)
         '''
         #solution2
+        #sorting the given array based on abs value of the element using key arg which takes fuction and compare each elm with 
+        #respect to that fuct and then taking square of resultant arr
         def absv(x):
             return abs(x)
         return [x**2 for x in sorted(A,key=absv)]
