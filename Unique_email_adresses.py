@@ -11,7 +11,13 @@ It is possible to use both of these rules at the same time.
 
 Given a list of emails, we send one email to each address in the list.  How many different addresses actually receive mails? 
 '''
-
+'''
+idea:
+we iterate through a list of email addresses. for every email address, we first split it w.r.t '@' and store 
+the first and second part differently then we take the first section of the first part after splitting it w.r.t '+'.
+then we split that part w.r.t '.' and join them after that to remove '.' from the first section and we finally append 
+this email to ans1. since we have to return unique emails we return len of the set of list.
+'''
 
 def numUniqueEmails(self, emails):
         """
@@ -19,10 +25,6 @@ def numUniqueEmails(self, emails):
         :rtype: int
         """
         ans1=[]
-        #we iterate through list of email adresses. for every email adress we first split if w.r.t '@' and store first and 
-        #second part differently then we take the first section of first part after spliting w.r.t '+'. then we split that part
-        #w.r.t '.' and join them after that to remove . from first section and we finally append this part to ans1.
-        #since we have to return unique emails we return len of set of list.
         for email in emails:
             first,sec=email.split('@')
             ans=''.join(first.split('+')[0].split('.'))
