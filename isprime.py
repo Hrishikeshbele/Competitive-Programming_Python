@@ -16,3 +16,14 @@ def is_prime(n):
         if n % divisor == 0:
             return False
     return True
+
+2.
+def isprime(num):
+    if num > 1:
+        for i in range(2, int(num/2)+1):
+            if (num % i) == 0:
+                return False
+        else:
+            return True
+    else:
+        return False
