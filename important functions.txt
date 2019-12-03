@@ -1,0 +1,2 @@
+1. str_name.replace('.', '[.]')  # '.' will be replaced by '[.]' at all places in str_name
+2.
