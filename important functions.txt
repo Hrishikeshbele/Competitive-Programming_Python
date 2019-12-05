@@ -1,2 +1,3 @@
 1. str_name.replace('.', '[.]')  # '.' will be replaced by '[.]' at all places in str_name
-2.
+2.list.insert(index, elem) #insert elm in list at perticular index
+
