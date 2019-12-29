@@ -2,3 +2,5 @@
 2. list.insert(index, elem) #insert elm in list at perticular index
 3. str.lower(): converts string chars to lower-case
 4. math.inf (#after puthon 3.5) or float("inf") : to represent infinite number
+5. iter(list) : coverts object into iterator
+6. str.find(elm) : returns element of index if present else returns -1.
