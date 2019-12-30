@@ -6,3 +6,4 @@
 6. str.find(elm) : returns index of elm if present else returns -1.
 7. str.index(elm) : returns index of elm if present else throws an exception.
 8. list[:, 0] >0 : returns True or False or equivalently 1(True) and 0(False)
+9. str.endswith('geeks'):returns True if a string ends with the given suffix otherwise returns False.
