@@ -1,3 +1,7 @@
+'''
+given a unsorted array then return the sorted array
+'''
+
 #1. selection sort
 def selectionsort(l):
     for i in range(len(l)):
