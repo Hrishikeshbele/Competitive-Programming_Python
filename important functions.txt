@@ -10,3 +10,4 @@
 10.print(*list): print list elements in one line
 11.sum(z<i for z in nums): count the no of true cases in returned list
 12.print('in {n} i got {m}'.format(n='math',m=89): printing using explicit name(no ordering req)
+13.dict.fromkeys(list(runs),0): creating dict with list as key and all vallues as 0
