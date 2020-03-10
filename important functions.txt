@@ -13,3 +13,4 @@
 13.dict.fromkeys(list(runs),0): creating dict with list as key and all vallues as 0
 14.[f(x) for x in list if condtn],[f(x) if condtn else g(x) for x in list]: list comprehension
 15.ord(a): to get ascii value of a
+16.string.replace(old, new):returns a copy of the string where all occurrences of a substring(old) is replaced with another substring(new).
