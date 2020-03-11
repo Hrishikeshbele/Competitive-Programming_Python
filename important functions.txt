@@ -14,3 +14,4 @@
 14.[f(x) for x in list if condtn],[f(x) if condtn else g(x) for x in list]: list comprehension
 15.ord(a): to get ascii value of a
 16.string.replace(old, new):returns a copy of the string where all occurrences of a substring(old) is replaced with another substring(new).
+17. neg=x<0 : will store boolen value corrsp to result
