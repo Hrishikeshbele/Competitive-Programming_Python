@@ -18,3 +18,4 @@
 18. int('00010',2) : it will convert binary number to interger
 19. bin(int)[2:] : will return binary representation of integer number
 20. bin(num).[2:].zfill(32) : fill the remaining bit with 0 to make it 32 bit representation.
+21. list.extend([4, 5]) : extend the list and add passed list at end
