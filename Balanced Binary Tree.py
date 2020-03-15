@@ -18,7 +18,7 @@ class Solution:
     def height(self,root):
             if root is None:
                 return 0
-            return  1+max(self.height(root.left),self.height(root.right))
+            return  1+max(self.height(root.left),self.height(root.right)) #1 for root node
     #function to check if binary tree is balanced   
     def isBalanced(self, A):
        #base case
