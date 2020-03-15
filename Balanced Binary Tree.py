@@ -1,5 +1,8 @@
 '''
 Given a binary tree, determine if it is height-balanced.
+
+solution: helper function height return height of tree. tree is balanced if left and right subtrees are balanced and difference height of
+left and right subtree is not greater than 1.
 '''
 # Definition for a  binary tree node
 # class TreeNode:
