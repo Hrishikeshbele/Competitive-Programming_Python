@@ -19,3 +19,6 @@
 19. bin(int)[2:] : will return binary representation of integer number
 20. bin(num).[2:].zfill(32) : fill the remaining bit with 0 to make it 32 bit representation.
 21. list.extend([4, 5]) : extend the list and add passed list at end
+22. string.isalnum() : return true if all char in str are either numbers or alphabets false otherwise
+23. string.isalpha() : return true if all char in str are either lower or upper char alphabets
+24. string.isdigit() :  returns true if all characters in the string are digits
