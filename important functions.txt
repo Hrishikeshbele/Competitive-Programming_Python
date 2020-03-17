@@ -22,3 +22,4 @@
 22. string.isalnum() : return true if all char in str are either numbers or alphabets false otherwise
 23. string.isalpha() : return true if all char in str are either lower or upper char alphabets
 24. string.isdigit() :  returns true if all characters in the string are digits
+25. chr(num) : returns Character of given ASCII value
