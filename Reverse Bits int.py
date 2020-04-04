@@ -17,4 +17,7 @@ class Solution:
         new_bin=binary[::-1].zfill(32)
         #returing int value of new binary num
         return int(new_bin,2)
+    #one line ans same approch
+    def reverse(self, n):
+        return int(bin(n)[2:].zfill(32)[::-1],2)
         
