@@ -29,6 +29,7 @@ class Solution:
  #bits solution
 #remeber that A-1 will unset last set bit and unset following bits then by taking and we are clearing that following set bits
 #so A&=A-1 will clear last set bit from repretn we count how many bits we cleared that is no of 1's in it's repretn
+# Think of a number in binary n = XXXXXX1000, n - 1 is XXXXXX0111. n & (n - 1) will be XXXXXX0000
 def numSetBits(self, A):
         count = 0
         while A > 0:
