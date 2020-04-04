@@ -17,7 +17,7 @@
 17. neg=x<0 : will store boolen value corrsp to result
 18. int('00010',2) : it will convert binary number to interger
 19. bin(int)[2:] : will return binary representation of integer number
-20. bin(num).[2:].zfill(32) : fill the remaining bit with 0 to make it 32 bit representation.
+20. bin(num)[2:].zfill(32) : fill the remaining bit with 0 to make it 32 bit representation.
 21. list.extend([4, 5]) : extend the list and add passed list at end
 22. string.isalnum() : return true if all char in str are either numbers or alphabets false otherwise
 23. string.isalpha() : return true if all char in str are either lower or upper char alphabets
