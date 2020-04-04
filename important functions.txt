@@ -23,3 +23,4 @@
 23. string.isalpha() : return true if all char in str are either lower or upper char alphabets
 24. string.isdigit() :  returns true if all characters in the string are digits
 25. chr(num) : returns Character of given ASCII value
+26. print(*[2,3,4]) : prints the elm of list in one line
