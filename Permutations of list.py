@@ -26,3 +26,21 @@ class Solution:
             ans += map(lambda perm:[val]+perm,other_pert)
             
         return ans
+------------
+#second solution 
+# idea: permutation [a,b,c,...] = [a + permutation[b,c,...], b + permutation[a,c,..], ...]
+
+def permutations(s):
+    ans=[]
+    #base case
+    if len(s)==1:
+        return [s]
+    for a in s:
+        #list of elm except a 
+        remaining=[x for x in s if x!=a]
+        #list of all possible permutations of remaining elm list
+        perm=permutations(remaining)
+        #adding each elm of perm with curr elm a and then append it to ans 
+        for j in perm:
+            ans.append([a]+j)
+    return ans
