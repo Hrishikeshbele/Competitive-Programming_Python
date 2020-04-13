@@ -24,3 +24,4 @@
 24. string.isdigit() :  returns true if all characters in the string are digits
 25. chr(num) : returns Character of given ASCII value
 26. print(*[2,3,4]) : prints the elm of list in one line
+27. print ('%.2f'%a),print ("{0:.2f}".format(a)),print (round(a,2)) :printing a upto 2 decimal places
