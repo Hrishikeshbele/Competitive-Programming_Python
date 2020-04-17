@@ -1,7 +1,7 @@
 > this folder contains codes related to OOPS concepts.
 > Consider a module to be the same as a python file. A file containing a set of functions you want to include in your application.
 > class variable is shared by all class objects created.its value will be same for all objs.
-> private variable is accessible within same class only, you can't access it from different class.
+> private variable is accessible within same class only, you can't access it from different class.private methods work same as private vars.
 > main goal of Abstraction is to handle complexity by hiding unnecessary details from the user. That enables the user to implement more complex logic on top of the provided abstraction without understanding or even thinking about all the hidden complexity
 > Encapsulation: language mechanism for restricting direct access to some of the object's components.
 >in inheritance, when we call method using child class obj then it searches for it in child class first and if not present then it 
