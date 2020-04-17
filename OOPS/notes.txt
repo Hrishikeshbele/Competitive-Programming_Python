@@ -9,3 +9,4 @@
 > if you pass 2 values to class constructor var with same obj name then 2nd val will overwrite 1st val like int var.(a = A(10);a = A(20) o/t: 20)
 > super().__init__() : call contructor of parents class 
 > (object) is parent class of all the classses we create in python. object class has buildin init constructor.there is special functn in object class called __str__() which contain code to convert object into string for printing.
+> in multiple inheritance case, search for functns,atrbs happens as depth-first, left to right
