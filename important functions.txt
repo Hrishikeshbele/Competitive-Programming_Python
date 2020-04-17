@@ -1,4 +1,5 @@
 >set: unordered,iterable,no-duplicates ; tuple: immutable,ordered ; dict: o(1) search,iterable, ordered(3.7+)
+> dir(math): returns list of all atributes and funtions of any object like class,module
 1. str_name.replace('.', '[.]')  # '.' will be replaced by '[.]' at all places in str_name
 2. list.insert(index, elem) #insert elm in list at perticular index
 3. str.lower(): converts string chars to lower-case
