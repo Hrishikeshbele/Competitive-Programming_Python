@@ -7,3 +7,4 @@
 >in inheritance, when we call method using child class obj then it searches for it in child class first and if not present then it 
  searches for it in parents class.
 > if you pass 2 values to class constructor var with same obj name then 2nd val will overwrite 1st val like int var.(a = A(10);a = A(20) o/t: 20)
+> super().__init__() : call contructor of parents class 
