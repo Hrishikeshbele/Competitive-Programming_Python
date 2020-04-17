@@ -6,3 +6,4 @@
 > Encapsulation: language mechanism for restricting direct access to some of the object's components.
 >in inheritance, when we call method using child class obj then it searches for it in child class first and if not present then it 
  searches for it in parents class.
+> if you pass 2 values to class constructor var then 2nd val will overwrite 1st val.
