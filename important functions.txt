@@ -31,3 +31,4 @@
 29. C.intersection(A, B) :  The returned set contains only items that exist in all sets.
 30. string.ascii_lowercase : will return string containing all lowercase alphabets
 31. string.digits : will return string containing all numbers
+32. assert (a.shape == b.shape) : If the condition is true, it does nothing and your program just continues to execute. But if the assert condition evaluates to false, it raises an AssertionError exception
