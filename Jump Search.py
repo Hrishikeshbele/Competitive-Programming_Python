@@ -17,5 +17,4 @@ def jumpsearch(arr,x):
             for j in range(i-step,i):
                 if arr[j]==x:
                     return(j)
-
     return(-1)
