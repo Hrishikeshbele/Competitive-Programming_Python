@@ -1,4 +1,5 @@
 '''
+Time Complexity : O(√n)
 The basic idea is to check fewer elements (than linear search) by jumping ahead by fixed steps or skipping some elements in place of searching all elements.
 
 What is the optimal block size to be skipped?:
