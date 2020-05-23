@@ -6,6 +6,10 @@ Example 1:
 Input: 3
 Output: "III"
 
+idea here is first create 2 list 1st contains roman letters and second containing corrsp values.then we loop through val's list and compare
+each elm in it with given num if we find that num is just greater than curr elm we enter into while loop in which we first add roman letter
+corresponding curr val to ans then substract curr val from num and again check if it is greater than curr val if not we proceed with for 
+loop with updated num val this process repeats
 '''
 
 class Solution(object):
