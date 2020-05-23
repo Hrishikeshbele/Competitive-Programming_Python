@@ -1,6 +1,9 @@
 '''
 string convert(string text, int nRows);
 convert("PAYPALISHIRING", 3) should return "PAHNAPLSIIGYIR"
+
+idea: we keep on adding character to their respective row string while we transverse through string.we use index var to keep track of the row to which curr char belong and
+step is used to adjust index such that curr char is get added to corrent row level string. as we reach at last row we decrease index and vice-versa.
 '''
 class Solution:
     # param A : string
