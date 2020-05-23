@@ -5,8 +5,8 @@ contains the most water.
 Note: You may not slant the container and n is at least 2.
 
 idea here is use 2 pointers and  move the left pointer and right pointer respectively to search for the next higher height.If height[L] < height[R],
-move toward right, else move left since Say height[0] < height[5],since area of (0, 4), (0, 3), (0, 2), (0, 1) will be smaller than (0, 5), so no n
-            
+move toward right, else move left since Say height[0] < height[5],since area of (0, 4), (0, 3), (0, 2), (0, 1) will be smaller than 
+(0, 5) since height will be equal to height[0] and lenght would const decrease,so no need to try them.           
 
 '''
 
