@@ -12,6 +12,7 @@ A solution set is:
   [-1, -1, 2]
 ]
 
+idea: first we sort the array then we interate throught list with 2 pointers.we set target as 
 '''
 
 class Solution(object):
