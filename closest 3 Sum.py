@@ -7,7 +7,7 @@ and target = 1.
 '''
 class Solution:
     # @param A : list of integers
-    # @param B : integer
+    # @param B : integer (target)
     # @return an integer
     def threeSumClosest(self, A, B):
         A.sort()
@@ -18,6 +18,8 @@ class Solution:
                 threeSum = A[i] + A[j] + A[k]
                 if threeSum == B:
                     return threeSum
+                #checking if diff between curr threesum and target is less then diff between target and closest(closest sum to target until now) we 
+                # replace closest with threesum
                 if closest is None or abs(B - threeSum) < abs(B - closest):
                     closest = threeSum
                 if threeSum < B:
