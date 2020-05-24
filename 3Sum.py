@@ -12,7 +12,8 @@ A solution set is:
   [-1, -1, 2]
 ]
 
-idea: first we sort the array then we interate throught list with 2 pointers.we set target as 
+idea: first we sort the array then we iterate throught list with 2 pointers.we set target as (0-curr elm) and use 2 pointers to find if 
+there is any pair in list whose sum is equal to target in same way as 2 sum problem. if we find such pair we add it to ans. 
 '''
 
 class Solution(object):
