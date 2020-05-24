@@ -40,3 +40,25 @@ class Solution(object):
                     start+=1
                     
         return (ans)
+     
+    
+#solution2
+
+def threeSum(nums):
+    nums.sort()
+    ans=set()
+    for i in range(len(nums)-2):
+        start=i+1
+        end=len(nums)-1
+        while start<end:
+            part_sum=nums[start]+nums[end]+nums[i]
+            if not part_sum:
+                ans.add((nums[i],nums[start],nums[end]))
+                end-=1
+                start+=1
+            elif part_sum>0:
+                end-=1
+            else:
+                start+=1
+                    
+    return ans
