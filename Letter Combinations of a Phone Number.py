@@ -7,6 +7,8 @@ Example:
 
 Input: "23"
 Output: ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"]
+
+idea here is we iterate throght all elms of digits and add letters of next digit to prev combination.
 '''
 
 
