@@ -11,7 +11,7 @@ A solution set is:
   [-2, -1, 1, 2],
   [-2,  0, 0, 2] ]
   
-  
+  here we used 3 sum concept and modified it for 4sum problem.
   '''
   
   class Solution(object):
