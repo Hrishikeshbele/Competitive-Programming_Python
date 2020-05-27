@@ -53,7 +53,7 @@ class Solution(object):
             prev.next=b
             prev.next.next=a
             prev.next.next.next = c
-            #prev will have its val that of a and next pointer to c since we need pointer to             # next elm after these 2 elms
+            #prev will have its val that of a and next pointer to c since we need pointer to next elm after these 2 elms
             prev=prev.next.next
         return dummy.next
             
