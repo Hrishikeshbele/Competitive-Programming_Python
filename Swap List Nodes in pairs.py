@@ -3,6 +3,11 @@ Given a linked list, swap every two adjacent nodes and return its head.
 
 For example,
 Given 1->2->3->4, you should return the list as 2->1->4->3.
+
+
+idea is to use prev var node which points to head .we first store pointers of a(1st elm to be swapped), b(2nd elm to be swapped) and
+c(elm used as pointer to next node after swap) then we assign a,b,c to theire corrsp position from prev and assing prev to a so that it
+has val of a and pointer to c then in next iteration above process is iterated.
 '''
 # Definition for singly-linked list.
 # class ListNode:
