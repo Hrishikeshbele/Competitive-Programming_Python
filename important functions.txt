@@ -32,3 +32,4 @@
 30. string.ascii_lowercase : will return string containing all lowercase alphabets
 31. string.digits : will return string containing all numbers
 32. assert (a.shape == b.shape) : If the condition is true, it does nothing and your program just continues to execute. But if the assert condition evaluates to false, it raises an AssertionError exception
+33. re.search(pattern,text) : either returns None (if the pattern doesn’t match), or a re.MatchObject that contains information about the matching part of the string.
