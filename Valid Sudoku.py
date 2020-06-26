@@ -23,7 +23,8 @@ Input:
 ]
 Output: true
 
-here idea is simple first we check if all rows are valid then we check if all colums and submatrices are valid. if all are valid we return true else false.
+here idea is simple first we check if all rows are valid then we check if all colums and submatrices are valid. if all are valid we return true else false.for every value we check
+if it is not '.' then we increase value corresponding to its key in dicts and if we found that its value is greater than 1 we return false.
 '''
 
 class Solution(object):
