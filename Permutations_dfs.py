@@ -14,7 +14,8 @@ Output:
   [3,2,1]
 ]
 
-idea: watch this video -> https://www.youtube.com/watch?v=KukNnoN-SoY
+Idea: watch this video -> https://www.youtube.com/watch?v=KukNnoN-SoY
+at each iteration we remove perticular no from list to create list of  possible nos and add it to path. then we recurrece with same logic on this list of possible nos.
 '''
 
 class Solution(object):
