@@ -14,6 +14,7 @@ A solution set is:
 ]
 
 idea here is we do dfs by adding list elm one at time and see if their sum equals to target if yes we append them to ans else we backtrack.
+watch this video: https://www.youtube.com/watch?v=irFtGMLbf-s
 '''
 
 class Solution(object):
