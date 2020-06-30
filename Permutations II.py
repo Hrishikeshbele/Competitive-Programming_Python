@@ -11,6 +11,7 @@ Output:
   [2,1,1]
 ]
 
+approach is same as permutation 1 but here we skipped the iteration where two consecutive no  in a list are same.
 '''
 
 class Solution(object):
