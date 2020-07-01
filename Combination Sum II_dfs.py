@@ -18,7 +18,8 @@ A solution set is:
   [1, 1, 6]
 ]
 
-idea is same as combination sum 1 we just add one statement to avoid duplicates.
+idea is same as combination sum 1 we just add one statement to avoid duplicates.if 2 consecative elements are same then we just do it for one of 2 elements because we will be 
+doing duplicate work if we do it for  2 elms.
 '''
 
 class Solution(object):
