@@ -11,7 +11,7 @@ Output:
   [2,1,1]
 ]
 
-approach is same as permutation 1 but here we skipped the iteration where two consecutive no  in a list are same.if 2 consecative elements are same then we just do it for one
+approach is same as permutation 1 but here we skipped the iteration where two consecutive no  in a list are same.The inner loop will process the first "1," then skip the next "1's".if 2 consecative elements are same then we just do it for one
 of 2 elements because we will be doing duplicate work if we do it for  2 elms.for example nums[1,1] and path=[2] then if we proceed with this pair will will get 2 same subsets i.e. [[2,1] ,[2,1]]
 '''
 
