@@ -35,7 +35,8 @@ dfs(nums = [1,2,2], path = [], res = [])
 | dfs(nums =[2, 2] , path =[1],res =  [[], [1], [1, 2], [1, 2, 2]])  
 | dfs( nums =[1, 2, 2] , path =[] ,res = [[], [1], [1, 2], [1, 2, 2], [2], [2, 2]]) 
 
-if 2 consecative elements are same then we just do it for one of 2 elements because we will be doing duplicate work if we do it for  2 elms.
+if 2 consecative elements are same then we just do it for one of 2 elements because we will be doing duplicate work if we do it for  2 elms. for example nums[1,1] and path=[2]
+then if we proceed with this pair will will get 2 same subsets i.e. [[2,1] ,[2,1]] .
 '''
 
 class Solution(object):
