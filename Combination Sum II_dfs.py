@@ -20,6 +20,7 @@ A solution set is:
 
 idea is same as combination sum 1 we just add one statement to avoid duplicates.if 2 consecative elements are same then we just do it for one of 2 elements because we will be 
 doing duplicate work if we do it for  2 elms.
+why sorting?: because the input might contain duplicates, after sorting, duplicated number will be next to each other, this way this duplication check nums[i] == nums[i-1] will work.
 '''
 
 class Solution(object):
