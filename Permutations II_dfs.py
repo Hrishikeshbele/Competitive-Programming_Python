@@ -11,7 +11,8 @@ Output:
   [2,1,1]
 ]
 
-approach is same as permutation 1 but here we skipped the iteration where two consecutive no  in a list are same.
+approach is same as permutation 1 but here we skipped the iteration where two consecutive no  in a list are same.if 2 consecative elements are same then we just do it for one
+of 2 elements because we will be doing duplicate work if we do it for  2 elms.
 '''
 
 class Solution(object):
