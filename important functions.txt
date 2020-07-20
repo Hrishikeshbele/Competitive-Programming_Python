@@ -35,3 +35,4 @@
 33. re.search(pattern,text) : either returns None (if the pattern doesn’t match), or a re.MatchObject that contains information about the matching part of the string.
 34. re.sub(pattern, repl, string) : Return the string obtained by replacing the occurrences of pattern in string by the replacement repl. 
 35. d = {k:0 for k in d} : setting all dictonary key values to 0 
+36. sorted(list, key=lambda x:x[0]) : sort the list based on first element of each sublist element
