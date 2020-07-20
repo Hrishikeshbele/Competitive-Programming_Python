@@ -30,3 +30,22 @@ class Solution(object):
         result.append(interval)
         return result
             
+#solution-2
+
+class Solution(object):
+    def merge(self, intervals):
+        """
+        :type intervals: List[List[int]]
+        :rtype: List[List[int]]
+        """
+        #list of merged intervals
+        res=[]
+        #we sort the list according to first element of each interval
+        sort=sorted(intervals,key=lambda x:x[0])
+        for i in sort:
+            #if there is overlap we adjust the interval else we add that interval to res
+            if res and i[0]<=res[-1][1]:
+                res[-1][1]=max(i[1],res[-1][1])
+            else:
+                res+=[i]
+        return res
