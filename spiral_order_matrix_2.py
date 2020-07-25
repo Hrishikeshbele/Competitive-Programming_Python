@@ -60,3 +60,40 @@ class Solution(object):
         return ans
             
         
+'''
+Solution 3
+
+here we maintain 4 var left,right,top,down. we first go from left to right assigning num.after this operation we decrease the top by 1 to indicate that operation for 1st row is done.
+then we go down in last column assigning num and here we decrese the right var to indicate last column is done .similary then we go from right to left and down to top.
+'''
+class Solution(object):
+    def generateMatrix(self, n):
+        """
+        :type n: int
+        :rtype: List[List[int]]
+        """
+        if not n:
+            return []
+        ans=[[0 for i in range(n)] for k in range(n)]
+        left,right,top,down,num =0,n-1,0,n-1,1
+        while left<=right and top<=down:
+            for i in range(left,right+1):
+                ans[top][i]=num
+                num+=1
+            top+=1
+            for i in range(top,down+1):
+                ans[i][right]=num
+                num+=1
+            right-=1
+            for i in range(right,left-1,-1):
+                ans[down][i]=num
+                num+=1
+            down-=1
+            for i in range(down,top-1,-1):
+                ans[i][left]=num
+                num+=1
+            left+=1
+        return ans
+                
+            
+        
