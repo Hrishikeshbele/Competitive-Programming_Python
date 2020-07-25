@@ -19,6 +19,7 @@ def generateMatrix(self, n):
         lo, hi = lo - len(A), lo
         A = [range(lo, hi)] + zip(*A[::-1])
     return A
+  
 #SOLUTION 2
 ''' 
 (1) Create a matrix to store the coordinates
@@ -33,23 +34,29 @@ def generateMatrix(self, n):
 
 (0,0) (0,1) (0,2) (1,2) (2,2) ...
 
+trick: 
+before zip(*cord)[::-1] : [[(1, 0), (1, 1), (1, 2)], [(2, 0), (2, 1), (2, 2)]]
+after zip(*cord)[::-1]: [((1, 2), (2, 2)), ((1, 1), (2, 1)), ((1, 0), (2, 0))]
+
 (3) Put 1, 2, 3, ... n**2 at these coordinates sequentially. Done.
+
+idea here is to get the index in spiral traversal manner.
 '''
 
-def generateMatrix(n):
-    
-    result = [[0 for i in range(n)] for j in range(n)]
-    coord = [[(i,j) for j in range(n)] for i in range(n)]
-    
-    count = 1
-    
-    while coord:
-        for x, y in coord.pop(0):
-            result[x][y] = count
-            count += 1
-            print(result)
-        coord = zip(*coord)[::-1]
-
-    return result
-  
-  
+class Solution(object):
+    def generateMatrix(self, n):
+        """
+        :type n: int
+        :rtype: List[List[int]]
+        """
+        ans=[[0 for i in range(n)] for k in range(n)]
+        cord=[[(i,j) for j in range(n)] for i in range(n)]
+        count=1
+        while cord:
+            for x,y in cord.pop(0):
+                ans[x][y]=count
+                count+=1
+            cord=zip(*cord)[::-1]
+        return ans
+            
+        
