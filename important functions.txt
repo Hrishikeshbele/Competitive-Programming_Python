@@ -38,3 +38,4 @@
 36. sorted(list, key=lambda x:x[0]) : sort the list based on first element of each sublist element
 37. zip(*[[]]) or zip(a, b) : returns iterator of tuples where ith item in each iterator is paired together in one tuple.
 38. Modulo Operator(a % b) : returns remainder if a>=b otherwise if b>a it returns a 
+39. 
