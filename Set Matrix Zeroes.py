@@ -16,7 +16,7 @@ Output:
   [1,0,1]
 ]
 
-solution approach: 1st we create set of all rows and columns where value is 0 then we make elements in these rows and columns zero.
+solution approach: 1st we create set of all rows and columns where value 0 is present then we make elements in these rows and columns zero.
 '''
 
 class Solution(object):
