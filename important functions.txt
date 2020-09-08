@@ -40,3 +40,4 @@
 37. zip(*[[]]) or zip(a, b) : returns iterator of tuples where ith item in each iterator is paired together in one tuple.
 38. Modulo Operator(a % b) : returns remainder if a>=b otherwise if b>a it returns a 
 39. set.add(j) :add element j to set
+40. x=np.array([2,1]).view() : will create view of original array. change in this array will also change that val in original array.
