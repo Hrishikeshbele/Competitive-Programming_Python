@@ -41,3 +41,4 @@
 38. Modulo Operator(a % b) : returns remainder if a>=b otherwise if b>a it returns a 
 39. set.add(j) :add element j to set
 40. x=np.array([2,1]).view() : will create view of original array. change in this array will also change that val in original array.
+41. arr.reshape(-1) : flattening the numpy array.
