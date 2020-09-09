@@ -44,7 +44,7 @@ def grayCode(A):
         res = res + temp
     return res    
 
-## solution 3
+## solution 3 (recursion)
 
 class Solution(object):
     def grayCode(self, n):
