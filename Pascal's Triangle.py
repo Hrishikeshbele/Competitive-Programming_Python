@@ -41,5 +41,25 @@ class Solution(object):
         return ans
                 
                 
+       
+### solution 2
+# idea is add first and last 1 to layer manually and middle element by summing previus layer elms.
+class Solution:
+    # @param A : integer
+    # @return a list of list of integers
+    def solve(self, A):
+        if A==0:
+            return []
+        ans=[[1]] # final list 
+        
+        for i in range(1,A):
+            temp=[1] # list of each layer. we will add 1 at start and end manually.
+            for j in range(i-1):
+                #appending values from previous rows
+                temp.append(ans[i-1][j]+ans[i-1][j+1])
+            temp.append(1)
+            ans.append(temp)
+        return ans
             
+
         
