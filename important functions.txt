@@ -43,3 +43,4 @@
 40. x=np.array([2,1]).view() : will create view of original array. change in this array will also change that val in original array.
 41. arr.reshape(-1) : flattening the numpy array.
 42. set union: s1|s2, set intersection: s1&s2, set difference: s1-s2
+43. str.strip() : removes white space on both sides of string, str.rstrip() :remove whitespace of right side similarly str.lstrip() works
