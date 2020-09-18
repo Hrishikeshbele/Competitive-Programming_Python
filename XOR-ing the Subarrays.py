@@ -62,7 +62,7 @@ so we can rewrite the above as
 0^1^0^0^3 -> applying Rule 1
 1^3 -> applying Rule 2
 => Result = 2
-
+Notice that every even index (0, 2) occurs an odd number of times and that every odd index (1) occurs an even number of times.
 So if the array length is odd then it is enough to XOR the 0,2,.... positions
 
 Case 2 : Array length 4 (even)
