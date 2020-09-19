@@ -26,3 +26,23 @@ class Solution(object):
 
         return point
         
+        
+ ### solution 2 (2 pointers)
+ # idea is use 2 pointers , one pointing to 1st elm of duplicate nums series and other to iterate over next elms. while iterating if we found elm not equal to elm at 1st pointer
+ # i.e 1st elm of duplicate series we point our 1st pointer to 2nd pointer and iterate again with help of second pointer and each time we find new elm we add it to list .
+
+class Solution:
+    # @param A : list of integers
+    # @return an integer
+    def removeDuplicates(self, A):
+        i,j=0,0
+        num=1
+        while i<len(A) and j<len(A):
+            if A[i]==A[j]:
+                j+=1
+            elif A[i]!=A[j]:
+                A[num]=A[j]
+                i=j
+                num+=1
+        return(num)
+            
