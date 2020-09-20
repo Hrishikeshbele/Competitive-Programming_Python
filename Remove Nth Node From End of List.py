@@ -44,3 +44,28 @@ class Solution(object):
         
         return start
         
+
+  ## solution 2 in one pass using 2 pointers
+# main idea here is first we will advance our fast pointer by n steps where n is ind from last whose elm we need to remove.after that we will advance both slow and fast pointers 
+# by one step and when we reach the stage where next of fast pointer is pointing to none we know that we reached at end of list. so position of our slow pointer must be n step 
+# behind that is 1 position behind from where we need to remove the elm so we will point that elm to next of next elms.
+
+class Solution(object):
+    def removeNthFromEnd(self, A, B):
+        """
+        :type head: ListNode
+        :type n: int
+        :rtype: ListNode
+        """
+        slow=fast=A
+        for i in range(B):
+            fast=fast.next
+        if not fast:
+            return A.next
+        while fast.next:
+            fast=fast.next
+            slow=slow.next
+            
+        slow.next=slow.next.next
+        
+        return A
