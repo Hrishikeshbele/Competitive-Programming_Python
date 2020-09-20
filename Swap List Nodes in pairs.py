@@ -57,3 +57,27 @@ class Solution(object):
             prev=prev.next.next
         return dummy.next
             
+## solution 2 can be written more elegantly like below:
+#pre -> a -> b -> b.next to pre -> b -> a -> b.next .  Instead of thinking about in what order change them,just change all three at once.
+
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution(object):
+    def swapPairs(self, head):
+        """
+        :type head: ListNode
+        :rtype: ListNode
+        """
+        dummy=pre=ListNode(0)
+        pre.next=head
+        while pre.next and pre.next.next:
+            a=pre.next
+            b=a.next
+            pre.next,a.next,b.next=b,b.next,a
+            pre=a
+           
+        return dummy.next
+        
