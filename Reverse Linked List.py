@@ -30,3 +30,13 @@ class Solution:
      
         return head
             
+## more optimized solution
+
+def reverseList(self,A):
+    curr=A
+    prev=None
+    while curr:
+        curr.next,prev,curr=prev,curr,curr.next
+
+    return prev
+            
