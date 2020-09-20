@@ -9,6 +9,7 @@ Output:
 
  4 -> 1 -> 6 -> 6 -> 4 -> 10
  
+ idea here is we traverse to node before which nodes we need to reverse and then we reverse the part before that node.
  '''
  # Definition for singly-linked list.
 # class ListNode:
@@ -32,7 +33,6 @@ class Solution:
         prev=p
         k=0
         while curr and k<B:
-            #print(curr,prev)
             a=curr.next
             curr.next=prev
             prev=curr
