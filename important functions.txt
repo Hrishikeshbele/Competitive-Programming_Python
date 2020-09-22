@@ -46,3 +46,4 @@
 43. str.strip() : removes white space on both sides of string, str.rstrip() :remove whitespace of right side similarly str.lstrip() works
 44. print on same line : write your print statement as foll- " print(a[i], end =" ") " , " print(a[i]), " , print(*list_name)
 45. dict.get(key,val) :returns the value of the item with the specified key and val if key not present
+46. dict.values() : will return dict values as iterator as list of key values
