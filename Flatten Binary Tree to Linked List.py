@@ -76,3 +76,27 @@ class Solution(object):
                
         helper(root)
         
+# solution using preorder transversal
+
+class Solution:
+    # @param A : root node of tree
+    # @return the root node in the tree
+    def preorder(self,A,ans):
+        if(not A):
+            return
+        
+        ans.append(A.val)
+        self.preorder(A.left,ans)
+        self.preorder(A.right,ans)
+        
+        return(ans)
+        
+    def flatten(self, A):
+        arr=self.preorder(A,[])
+        d=TreeNode(None)
+        new=d
+        for i in arr:
+            node=TreeNode(i)
+            new.right=node
+            new=new.right
+        return(d.right)
