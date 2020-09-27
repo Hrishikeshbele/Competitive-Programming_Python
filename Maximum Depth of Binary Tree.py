@@ -32,4 +32,15 @@ class Solution(object):
         """
         if not root:
             return 0
-        return 1+max(self.maxDepth(root.left),self.maxDepth(root.right))
+        return 1+max(self.maxDepth(root.left),self.maxDepth(root.right)) # we are adding 1 each time we are trasversing downward
+
+    
+# above solution can be written in following way
+class Solution:
+    # @param A : root node of tree
+    # @return an integer
+    def maxDepth(self, A):
+        if A:
+            return 1+max(self.maxDepth( A.left),self.maxDepth( A.right))
+        else:
+            return 0
