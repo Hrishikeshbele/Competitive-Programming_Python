@@ -23,3 +23,21 @@ class Solution:
             #checking recursively if value at both tree is same or not.
             return int(A.val==B.val and self.isSameTree(A.left,B.left) and self.isSameTree(A.right,B.right))
         return 0
+
+ 
+# above solution can be written in following way
+class Solution:
+    # @param A : root node of tree
+    # @param B : root node of tree
+    # @return an integer
+    def isSameTree(self, A, B):
+        if A is None and B is None:
+            return 1
+        elif not A or not B:
+            return 0
+        if A.val!=B.val:
+            return 0
+        else:
+            return int(self.isSameTree(A.left, B.left) and self.isSameTree(A.right, B.right))
+        return 0
+                
