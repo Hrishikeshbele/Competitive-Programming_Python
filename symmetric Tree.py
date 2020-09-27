@@ -8,6 +8,12 @@ For example, this binary tree [1,2,2,3,4,4,3] is symmetric:
   2   2
  / \ / \
 3  4 4  3
+
+2 trees T1 and T2 are symmetric if
+1) value of T1’s root is same as T2’s root
+2) T1’s left and T2’s right are symmetric.
+3) T2’s left and T1’s right are symmetric.
+
 '''
 
 # Definition for a binary tree node.
