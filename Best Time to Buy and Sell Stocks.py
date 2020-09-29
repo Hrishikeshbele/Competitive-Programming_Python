@@ -19,3 +19,22 @@ class Solution:
             min_buy = min(min_buy, price) #is price less than min_buy
             profit = max(profit, price - min_buy)
         return profit
+
+    
+    
+ # solution without dp
+
+class Solution(object):
+    def maxProfit(self, prices):
+        """
+        :type prices: List[int]
+        :rtype: int
+        """
+        ans=[]
+        for i in range(len(prices)-1):
+            if sorted(prices[i+1:])[-1]-prices[i]>=0:
+                #we will keep track of max prof at each day w.r.t every other day afterward
+                ans.append(sorted(prices[i+1:])[-1]-prices[i])
+        if not ans:
+            return 0
+        return max(ans)
