@@ -44,3 +44,12 @@ Explanation 1:
                     ans[i][j]=max(ans[i-1][j],ans[i][j-1])
         return ans[-1][-1]
         
+## solution 2 (recursive)
+
+def lcs(a,b):
+    if not a or not b:
+        return 0
+    if a[-1]==b[-1]: # if last element are equal to increment ans by 1 and decrease the srtring size
+        return 1+lcs(a[:-1],b[:-1]) 
+    else:
+        return max(lcs(a[:-1],b),lcs(a,b[:-1]))
