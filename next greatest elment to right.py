@@ -24,5 +24,5 @@ def ngr(a):
                 ans.append(stack[-1])
             elif not stack:
                 ans.append(-1)
-        stack.append(a[i])
+        stack.append(a[i]) # append curr elm to stack
     return ans[::-1]
