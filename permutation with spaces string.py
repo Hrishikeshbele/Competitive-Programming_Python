@@ -4,7 +4,8 @@ given string print all the possible permutations of string with spaces
 ex. 'abc'
 output: 'abc', 'ab-c', 'a-bc', 'a-b-c'
 
-idea here is to use the recursion tree. at each node after first elm we have choice to include that elm with '_' or without it.watch the youtube video by aditya verma for full approach.
+idea here is to use the recursion tree. for 1st elm we don't have any choice to make so we include it in our ans string first while passing.
+at each node after first elm we have choice to include that elm with '_' or without it.watch the youtube video by aditya verma for full approach.
 ex.   a
      / \
     ab a_b 
