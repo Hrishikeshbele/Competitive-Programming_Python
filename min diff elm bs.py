@@ -4,6 +4,9 @@ ex.
 a=[1,2,3,4,7]
 target=5
 here 4 have min diff with target elm 5. so we will return ans as 5. 
+
+here will try to find target elm in array if not present will do binary search until condition satisfies and then at last we will get pointers pointing to 2 negbours of target elms 
+whose diff will be min w.r.t target elm. from these  2 elms we will find elm whose diff is min and return it.
 '''
 
 def bs_min_diff(a,k):
