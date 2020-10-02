@@ -11,7 +11,7 @@ given a string find its all combination with capital and small of each char in s
                        / \    / \  (decision on b , wheter to take small or capital)
                     'ab''aB' 'Ab''AB' (ans)
                     
-                    
+you can see in tree we are making input smaller and smaller at each level of tree by taking decision on its char and at last we will get empty string where we will get one elm of our ans.
                     
 '''
 
