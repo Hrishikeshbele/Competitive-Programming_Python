@@ -56,3 +56,21 @@ class Solution:
         
         helper(A, A, '')
         return result
+
+
+## recursion solution
+
+'''
+if no of opening bracket left is less than closing bracket left that means that we have use more opening bracket than closing and we will be able to use closing bracket.if left
+opening and closing bracket are equal in number then parenthesis is balanced and when left opening parentheses are greater than closing parentheses string is not valid.
+
+for n=2,                    '(' (o=1,c=2) # o denotes no of open bracket left to use , c denotes no of close bracket left to use
+		            /  \
+		  (0,2)	  '((' '()' (1,1)
+		           |     | 
+		  (0,1)	  '(()' '()(' (0,1) 
+		            |     |
+		  (0,0)	  '(())' '()()' (0,0)
+		  
+from the recursion tree we observe that if o is not equal to 0 we always have choice to add op bracket.when c>o we have choice to add clos bracket and when o=0 and c=0 we get result.
+'''
