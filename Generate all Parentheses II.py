@@ -74,3 +74,15 @@ for n=2,                    '(' (o=1,c=2) # o denotes no of open bracket left to
 		  
 from the recursion tree we observe that if o is not equal to 0 we always have choice to add op bracket.when c>o we have choice to add clos bracket and when o=0 and c=0 we get result.
 '''
+
+def rec(c,o,ans,res):  # c : no of closing par , o: no of opning parth
+    if c==0 and o==0:
+        res.append(ans)
+        return
+    if o!=0:
+        rec(c,o-1,ans+'(',res)
+    if c>o:
+        rec(c-1,o,ans+')',res)
+    return res
+
+print(rec(3,3,'',[]))
