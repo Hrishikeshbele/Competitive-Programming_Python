@@ -32,6 +32,7 @@ A solution set is:
                     if a[l] + a[r] == rem:
                         ans.add(tuple([a[i], a[j], a[l], a[r]]))
                         l += 1
+                        r-=1
                     elif a[l] + a[r] < rem:
                         l+= 1
                     else: 
