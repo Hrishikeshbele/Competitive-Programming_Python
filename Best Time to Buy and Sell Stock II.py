@@ -14,6 +14,10 @@ Explanation: Buy on day 2 (price = 1) and sell on day 3 (price = 5), profit = 5-
              
 solution approach:we assume that person buys and sells stock on consecutive days if price on next day is greater than previous day.
 then we add all these price increases.
+Mathematically speaking: Total Profit=sum of all profitable transaction from array
+
+The key point is we need to consider every peak immediately following a valley to maximize the profit. In case we skip one of the peaks (trying to obtain more profit), we will end
+up losing the profit over one of the transactions leading to an overall lesser profit.
 '''
 class Solution(object):
     def maxProfit(self, prices):
