@@ -28,3 +28,22 @@ class Solution:
        return int(self.isBalanced( A.right) and self.isBalanced( A.left) and abs(self.height(A.left)-self.height(A.right))<=1)
        
         
+## same solution as above just with small chages
+
+class Solution(object):
+    def height(self,root):
+            if not root:
+                return 0
+            return 1+max(self.height(root.right),self.height(root.left))
+    def isBalanced(self, root):
+        """
+        :type root: TreeNode
+        :rtype: bool
+        """
+        
+        if not root:
+            return True
+        if abs(self.height(root.right)-self.height(root.left))>1:
+            return False
+    
+        return self.isBalanced(root.left) and self.isBalanced(root.right)
