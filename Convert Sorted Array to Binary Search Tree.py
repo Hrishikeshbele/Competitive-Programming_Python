@@ -41,3 +41,18 @@ class Solution(object):
             root.right=convert(nums,mid+1,right)
             return root
         return convert(nums,0,len(nums)-1)
+
+      
+  # solution 2
+def sortedArrayToBST(self, nums):
+  """
+  :type nums: List[int]
+  :rtype: TreeNode
+  """
+  if not nums:
+      return None
+  mid=len(nums)//2
+  root=TreeNode(nums[mid])
+  root.left=self.sortedArrayToBST(nums[:mid])
+  root.right=self.sortedArrayToBST(nums[mid+1:])
+  return root
