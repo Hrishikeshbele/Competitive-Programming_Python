@@ -15,6 +15,9 @@ So, if we take all the numbers with 5 as a factor, we'll have way more than enou
 Example One:
 How many multiples of 5 are between 1 and 23? There is 5, 10, 15, and 20, for four multiples of 5. Paired with 2's from the even factors,
 this makes for four factors of 10, so: 23! has 4 zeros.
+We add a trailing zero every time we multiply by 10 (5 * 2). Since we will have always more 2s multiple than 5s, the problem is to find the number of 5s in the numbers from 1 to n.
+Let's consider 10! as example:
+10! = 10 * 9 * 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1
 '''
 
 class Solution(object):
