@@ -52,3 +52,23 @@ class Solution(object):
         return ans
                 
         
+#solution 2 (same appoach but less code)
+
+def find(arr,k):
+    ans=[-1,-1]
+    i,j=0,len(arr)-1
+    while i<=j:
+        mid=(i+j)//2
+        if arr[mid]==k:
+            temp=mid
+            while mid<len(arr) and arr[mid+1]==k:
+                mid+=1
+            while temp>0 and arr[temp-1]==k:
+                temp-=1
+            ans=[temp,mid]
+            return ans
+        elif arr[mid]>k:
+            j=mid-1
+        else:
+            i=mid+1
+    return ans
