@@ -23,3 +23,27 @@ class Solution:
             dict[num]=True
         return 0
     
+# solution 2 (2 pointers)
+
+'''
+ The first step remain same. The idea for second step is take two index variables i and j, initialize them as 0 and 1 respectively. Now run a linear loop. 
+ If arr[j] – arr[i] is smaller than n, we need to look for greater arr[j], so increment j. If arr[j] – arr[i] is greater than n, we need to look for greater arr[i], 
+ so increment i. 
+ '''
+def findPair(arr,n): 
+    arr=sorted(arr)
+    size = len(arr) 
+  
+    # Initialize positions of two elements 
+    i,j = 0,1
+  
+    # Search for a pair 
+    while i < size and j < size: 
+        if i != j and arr[j]-arr[i] == n: 
+            return True
+        elif arr[j] - arr[i] < n: 
+            j+=1
+        else: 
+            i+=1
+    
+    return False
