@@ -14,7 +14,7 @@ Output:
   [1,4],
 ]
 
-idea : watch this video -> https://www.youtube.com/watch?v=7IQHYbmuoVU
+idea : watch this video by TECH DOSE-> https://www.youtube.com/watch?v=7IQHYbmuoVU
 here we do dfs using backtracking
 
 '''
