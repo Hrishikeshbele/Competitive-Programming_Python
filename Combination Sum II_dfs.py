@@ -42,7 +42,7 @@ class Solution(object):
         if target<0:
             return 
         for i in range(ind,len(cand)): 
-            if i>ind and cand[i]==cand[i-1]:
+            if i>ind and cand[i]==cand[i-1]: # i==ind is case where two same nums are used time like [1,1,6]. which we pass.
                 continue
             self.helper(cand,target-cand[i],i+1,path+[cand[i]],res)
         
