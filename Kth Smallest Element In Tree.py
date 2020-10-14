@@ -27,3 +27,19 @@ class Solution:
             root = root.right
         
             
+# solution2
+
+    def kthSmallest(self, root, k):
+        """
+        :type root: TreeNode
+        :type k: int
+        :rtype: int
+        """
+        def helper(root,ans):
+            if root:
+                helper(root.left,ans)
+                ans.append(root.val)
+                helper(root.right,ans)
+            return ans
+        
+        return helper(root,[])[k-1]
