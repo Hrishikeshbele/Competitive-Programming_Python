@@ -14,3 +14,4 @@
 > abstact methods are not implemented in abstract class they are only defined there and implemented in child class of abstract class. we can't create obj for abstract class directly.
 > Data attributes:Variable owned by a particular instance of a class (intialised inside init) , Class(static) attributes:Owned by the  whole class . shared by all class instances.
 > Dynamic Binding: The code associated with a given procedure is not known until the time of the call at run time.
+> method overlaoding: method will behave differently based on input passed to it.
