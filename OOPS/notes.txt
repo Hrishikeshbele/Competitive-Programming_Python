@@ -11,3 +11,4 @@
 > (object) is parent class of all the classses we create in python. object class has buildin init constructor.there is special functn in object class called __str__() which contain code to convert object into string for printing.
 > in multiple inheritance case, search for functns,atrbs happens as depth-first, left to right in parents classes
 > abstract class have atleast one abstract method.An abstraction denotes the essential characteristics of an object that distinguish it from all other kinds of objects.
+> abstact methods are not implemented in abstract class they are only defined there and implemented in child class of abstract class. we can't create obj for abstract class directly.
