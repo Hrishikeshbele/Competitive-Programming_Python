@@ -39,7 +39,7 @@ Explanation 1:
                 if not B[j] or not A[i]:
                     ans[i][j]=0
                 elif A[i]==B[j]:
-                    ans[i][j]=ans[i-1][j-1]+1
+                    ans[i][j]=ans[i-1][j-1]+1 # max after removing last char from both strs
                 elif A[i]!=B[j]:
                     ans[i][j]=max(ans[i-1][j],ans[i][j-1]) # we will get max substring by taking max substring we get if we remove last char from either of string.
         return ans[-1][-1]
