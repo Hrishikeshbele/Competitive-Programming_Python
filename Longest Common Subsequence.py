@@ -41,7 +41,7 @@ Explanation 1:
                 elif A[i]==B[j]:
                     ans[i][j]=ans[i-1][j-1]+1
                 elif A[i]!=B[j]:
-                    ans[i][j]=max(ans[i-1][j],ans[i][j-1])
+                    ans[i][j]=max(ans[i-1][j],ans[i][j-1]) # we will get max substring by taking max substring we get if we remove last char from either of string.
         return ans[-1][-1]
         
 ## solution 2 (recursive)
@@ -49,7 +49,7 @@ Explanation 1:
 def lcs(a,b):
     if not a or not b:
         return 0
-    if a[-1]==b[-1]: # if last element are equal to increment ans by 1 and decrease the srtring size
+    if a[-1]==b[-1]: # if last element are equal to increment ans by 1 and decrease the srtring size. 
         return 1+lcs(a[:-1],b[:-1]) 
     else:
-        return max(lcs(a[:-1],b),lcs(a,b[:-1]))
+        return max(lcs(a[:-1],b),lcs(a,b[:-1])) # we will get max substring by taking max substring we get if we remove last char from either of string.
