@@ -5,6 +5,8 @@ find the length of the longest substring without repeating characters.
 Example:
 
 The longest substring without repeating letters for "abcabcbb" is "abc", which the length is 3.
+
+idea: watch video by datadaft on youtube.
 '''
 class Solution:
     # @param A : string
