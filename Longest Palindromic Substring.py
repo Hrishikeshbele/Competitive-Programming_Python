@@ -16,9 +16,10 @@ Example :
 Input : "aaaabaaa"
 Output : "aaabaaa"
 
-
+idea:
 at each elm we go left and right and see how much longest substring is possible.if that string has length more that max len string until now. we update the max str.
-
+(why a[l+1:r]?)  :The while loop stops either because l or r is out of range or because the s[l] != s[r], which means neither s[l] nor s[r] can be part of the longest palindrome and 
+the helper function returns s[l+1:r](inclusive on the left and exclusive on the right).
 '''
 
 class Solution:
