@@ -29,6 +29,11 @@ class Solution:
         
 #solution-2
 # idea is to store the each chart and its prev seen position as dict and if we encounter a repeated char we start with new string and for each string and each increasing char we keep track of max length of string we encounterd
+''' 
+Here's an example: "tmmzuxta"
+Two characters are repeated: t and m. Because of the repeated m, your start will be 2. Now, when you're at the second occurrence of t, this check ensures that you don't go into the if just because you've seen it before. 
+In this case, you have seen it before BUT you saw it before you started the count. If you remove that condition, your maxlength will be 5. Otherwise it will be 6 - which is the right answer 
+'''
 class Solution(object):
     def lengthOfLongestSubstring(self, s):
         """
@@ -39,7 +44,7 @@ class Solution(object):
         #start var to keep track of start of new substring after repeating charecters
         start=max_len=0
         for i,val in enumerate(s):
-            if val in dicts and dicts[val]>=start :
+            if val in dicts and dicts[val]>=start : 
                 # we move one char forward from last seen postion of char
                 start=dicts[val]+1
           
