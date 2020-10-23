@@ -1,4 +1,5 @@
 >set: unordered,iterable,no-duplicates ; tuple: ordered,immutable ; dict: unorderd,o(1) search,iterable, ordered(3.7+), No duplicate keys
+> "\t" is a tab , "\n" is a newline
 > dir(math): returns list of all atributes and funtions of any object like class,module
 > remove() deletes the first matching element whereas del and pop removes the element at a specific index. #List.remove('hi') #del List[1] #List.pop(1) 
 1. str_name.replace('.', '[.]')  # '.' will be replaced by '[.]' at all places in str_name
