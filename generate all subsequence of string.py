@@ -14,7 +14,7 @@ def ss(s,comb,ans):
     if len(s)==0:
         ans.append(comb)
         return
-    ss(s[:-1],comb+s[-1],ans) # adding curr char to our comb
-    ss(s[:-1],comb,ans) # not adding curr char to our comb
+    ss(s[1:],comb+s[0],ans) # adding curr char to our comb
+    ss(s[1:],comb,ans) # not adding curr char to our comb
     return ans
 
