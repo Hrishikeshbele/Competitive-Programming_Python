@@ -35,7 +35,7 @@ Input 1:
         nex=[A]
         while A and nex:
             temp=[]
-            lev=[]
+            lev=[] # we can use var also insted of list and add val each time at pert level 
             for n in nex:
                 lev.append(n.val)
                 if n.left:
