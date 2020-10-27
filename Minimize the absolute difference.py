@@ -13,7 +13,8 @@ B : [ 6, 9, 15 ]
 C : [ 2, 3, 6, 6 ]
 Output:1
 '''
-#idea here is to increament the interator of arr in which min curr min elm is present this will lead us to find min diff 
+# idea here is to increament the interator of arr in which min curr min elm is present this will lead us to find min diff . since smaller elm and larger elms will have greater
+# difference than 2 larger elms. so we increment the smaller counter to find next bigger elm. 
 class Solution:
     # @param A : list of integers
     # @param B : list of integers
