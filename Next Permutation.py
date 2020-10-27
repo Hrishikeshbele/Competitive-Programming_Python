@@ -14,6 +14,7 @@ Here are some examples. Inputs are in the left-hand column and its corresponding
 idea: we start from back and find the i where decreasing sequence will start from i=1. then we find the elm at j which is next greater elm to elm at i and replace it with i and 
 then we reverse the array from index i+1.
 steps: 1. find decresing subarray sequence 2. replace elm just before found squence with next greatest elm in sequence 3. reverse this sequence after swapping
+> watch video by back to back swe on youtube
 '''
 
 
