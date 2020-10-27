@@ -44,3 +44,23 @@ Merged tree:
             return new
         else:
             return A or B
+
+# same as above approach 
+class Solution(object):
+    def mergeTrees(self, A, B):
+        """
+        :type t1: TreeNode
+        :type t2: TreeNode
+        :rtype: TreeNode
+        """
+        ans=TreeNode(None)
+        if not A and not B:
+            return None
+        if not A or not B:
+            return A or B
+        if A and B:
+            ans.val= A.val+B.val      
+            ans.left=self.mergeTrees(A.left,B.left)
+            ans.right=self.mergeTrees(A.right,B.right)
+        
+        return ans
