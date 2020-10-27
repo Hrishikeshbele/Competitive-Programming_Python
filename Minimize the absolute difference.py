@@ -36,7 +36,7 @@ class Solution:
                 b += 1
             else:
                 c += 1
-        return 
+        return mini
    
 
 # solution 2 
