@@ -33,7 +33,6 @@ class Solution(object):
                 
             
                 
-        return ans 
         '''
         #solution2
         for i in range(1,len(nums)):
