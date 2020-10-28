@@ -16,6 +16,14 @@ Output:
 
 Idea: watch this video -> https://www.youtube.com/watch?v=KukNnoN-SoY
 at each iteration we remove perticular no from list to create list of  possible nos and add it to path. then we recurrece with same logic on this list of possible nos.
+
+// The recursion tree looks like:
+//
+// - ([],[1, 2, 3])
+// - ([1],[2,3]); ([2],[1, 3]); ([3],[2, 1])
+// - ([1,2],[3]); ([1,3],[2]); ([2,1],[3]); ([2,3],[1]); ([3,2],[1]); ([3,1],[2])
+// - ([1,2,3]); ([1,3,2]); ([2,1,3]); ([2,3,1]); ([3,2,1]); ([3,1,2])
+
 '''
 
 class Solution(object):
