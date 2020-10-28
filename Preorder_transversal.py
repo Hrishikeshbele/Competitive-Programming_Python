@@ -20,15 +20,20 @@ return [1,2,3].
 #		self.right = None
 
 class Solution:
-	# @param A : root node of tree
-	# @return a list of integers
-	def preorderTraversal(self, start):
-	    res=[]
-        if start:
-            res.append(start.val)
-            res += (self.preorderTraversal(start.left))
-            res += (self.preorderTraversal(start.right))
-        return res
+    # @param A : root node of tree
+    # @return a list of integers
+    def preorderTraversal(self, start):
+        res=[]
+        def trans(start,res):
+           if start:
+               res.append(start.val)
+               trans(start.left,res)
+               trans(start.right,res)
+           return res
+            
+        return trans(start,res)
+
+
 #without recursion using stacks
 class Solution:
     # @param A : root node of tree
