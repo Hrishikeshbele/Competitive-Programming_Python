@@ -19,11 +19,9 @@ class Solution(object):
         :rtype: ListNode
         """
         #creating dummy node,pre and pointing it to head of linked list.
-        pre=ListNode(0) #pointer pointing to last node of linked list without duplicates
-        dummy=ListNode(0)#dummy node to keep pointer to head of linked list without uplicates 
-        dummy.next=head
+        dummy=pre=ListNode(0) #pointer pointing to last node of linked list without duplicates ##dummy node to keep pointer to head of linked list without uplicates 
         pre.next=head
-        dummy=pre #assign pre linked list ot dummy 
+        
         while head and head.next:
             #if 2 consecutive values are equal travel to last value of equal values series
             if head.val==head.next.val:
