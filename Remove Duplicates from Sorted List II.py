@@ -8,8 +8,8 @@ Example 1:
 Input: 1->2->3->3->4->4->5
 Output: 1->2->5
 
-idea here is to use pre linked list to store values of linked list without duplicates .when we find 2 consecutive values of list equal then we transverse to last value of equal values
-series and then point next of pre pointer to next of this last value. in this way to skip all duplicate values. 
+idea here is to use pre linked list to store values of linked list without duplicates and head to traverse the linked list .when we find 2 consecutive values of list equal then we 
+transverse to last value of equal values series and then point next of pre pointer to next of this last value. in this way to skip all duplicate values. 
 '''
 
 class Solution(object):
