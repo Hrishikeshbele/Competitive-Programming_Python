@@ -27,12 +27,9 @@ class Solution:
 	    return A
 	       
 	            
-#same solution but with more comments
-# Definition for singly-linked list.
-# class ListNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.next = None
+# solution 2
+# idea : we transverse the list normally and when we incounter a repeated elm we move forward until we find elm which is not duplicate and then we assing this elm as next of stored 
+# pointer to first duplicate elm.
 
 class Solution(object):
     def deleteDuplicates(self, head):
