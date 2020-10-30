@@ -50,3 +50,4 @@
 45. dict.get(key,val) :returns the value of the item with the specified key and val if key not present
 46. dict.values() : will return dict values as iterator as list of key values
 47. str.split(',') : split string using delimiter comma. doesn't work for mult delimers so use re.split(mult_del,str)
+48. functools.reduce(lambda a,b : a+b,lis,intialiser) : reduce fn applies lambda fn to each elms in list . intialiser is optional arg here. This means that the first call to function will use the value of initializer and the first item of iterable to perform its first partial computation. After this, reduce() continues working with the subsequent items of iterable. #ex 1if 100 is intialiser and l=[0,1] then , add fn will follow 100 + 0 = 100 -> 100 + 1 = 101
