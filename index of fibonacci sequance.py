@@ -33,6 +33,4 @@ def isfib(n):
         return res 
     else:
         return -1
-        
-#solutin 2
 
