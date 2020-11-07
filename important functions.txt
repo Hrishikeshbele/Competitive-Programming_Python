@@ -55,3 +55,4 @@
 50.[p for p in itertools.product(x, repeat=3)] : all sample including repeatation of pert elm in perm . ex (1,1),(2,2) used for sampling with replacement 
 51. str.splitlines( ) : will return list with split at new line in str.
 52. id(obj) :function returns a unique id for the specified object.All objects in Python has its own unique id. The id is assigned to the object when it is created. The id is the object's memory address, and will be different for each time you run the program. (except for some object that has a constant unique id, like integers)
+53. isinstance(5, int) :will return True. The isinstance() function returns True if the specified object is of the specified type, otherwise False.
