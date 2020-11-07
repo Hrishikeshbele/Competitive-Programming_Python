@@ -17,3 +17,4 @@
 > method overlaoding: method will behave differently based on input passed to it.
 > data overloading occurs when two or more methods in one class have the same method name but different parameters. 
 > Polymorphism means the ability to take various forms.Polymorphism refers to the ability of the function with the same name to carry different functionality altogether.
+> isinstance consider inheritance (an instance of a derived class is an instance of a base class, too), while checking for equality of type does not (it demands identity of types and rejects instances of subtypes, AKA subclasses).
